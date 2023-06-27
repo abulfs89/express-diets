@@ -1,0 +1,22 @@
+<%- include('../partials/header') %>
+
+<h2>Edit Fruit</h2>
+<form action="/diets/<%=diet.id%>?_method=PUT" method="POST">
+  <label>Name:
+    <input type="text" name="name" value="<%= diet.name %>">
+  </label><br>
+  <label>Meal:
+    <select name="Meal">
+      <option value="Breakfast" <%= diet.meal === 'Breakfast' ? 'selected' : '' %>>Breakfast</option>
+      <option value="Lunch" <%= diet.meal === 'Lunch' ? 'selected' : '' %>>Lunch</option>
+      <option value="Dinner" <%= diet.meal === 'Dinner' ? 'selected' : '' %>>Dinner</option>
+      <option value="Dessert" <%= diet.meal === 'Dessert' ? 'selected' : '' %>>Dessert</option>
+    </select>
+  </label><br>
+  <label>Recipe:
+    <input type="text" name="Recipe" value="<%= diet.Recipe %>">
+  </label><br>
+  <input type="submit"/>
+</form>
+
+<%- include('../partials/footer') %>

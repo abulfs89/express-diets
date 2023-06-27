@@ -1,0 +1,9 @@
+<%- include('../partials/header') %>
+
+<h2>Diet Details(show PAGE)</h2>
+<p>Name: <%= diet.name %></p>
+<p>Meal: <%= diet.Meal %></p>
+<p>Recipe: <%= diet.Recipe%></p>
+<a href="/diets/edit/<%= diet.id %>">Edit</a>
+
+<%- include('../partials/footer') %>
