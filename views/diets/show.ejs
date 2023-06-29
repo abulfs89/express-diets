@@ -1,9 +1,45 @@
 <%- include('../partials/header') %>
+<nav>
+    <div class="nav-links">
+      <a href="/diets/new" class="nav-link">Add Diet</a>
+      <a href="/diets" class="nav-link">Diet List</a>
+    </div>
+  </nav>
 
-<h2>Diet Details(show PAGE)</h2>
-<p>Name: <%= diet.name %></p>
-<p>Meal: <%= diet.Meal %></p>
-<p>Recipe: <%= diet.Recipe%></p>
-<a href="/diets/edit/<%= diet.id %>">Edit</a>
+  <div class="container">
+    <div class="report-chart">
+      <h2>Diet Details</h2>
+      <div class="form-group">
+        <p class="detail-label">Name:</p>
+        <p class="detail-value"><%= diet.name %></p>
+      </div>
+      <div class="form-group">
+        <p class="detail-label">Breakfast:</p>
+        <p class="detail-value"><%= diet.Breakfast %></p>
+      </div>
+      <div class="form-group">
+        <p class="detail-label">Lunch:</p>
+        <p class="detail-value"><%= diet.Lunch %></p>
+      </div>
+      <div class="form-group">
+        <p class="detail-label">Dinner:</p>
+        <p class="detail-value"><%= diet.Dinner %></p>
+      </div>
+      <div class="form-group">
+        <p class="detail-label">Dessert:</p>
+        <p class="detail-value"><%= diet.Dessert %></p>
+      </div>
+      <h2 class="rating-header">Diet Rating</h2>
+      <div class="form-group">
+        <p class="detail-label">Rating:</p>
+        <p class="detail-value"><%= diet.Rating %></p>
+      </div>
+      <div class="form-group">
+        <p class="detail-label">Comments:</p>
+        <p class="detail-value"><%= diet.Comments %></p>
+      </div>
+      <a href="/diets/edit/<%= diet.id %>" id="but" class="Feedback-button">Feedback</a>
+    </div>
+  </div>
 
 <%- include('../partials/footer') %>

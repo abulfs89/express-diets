@@ -1,8 +1,176 @@
 body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  font-family: Arial, sans-serif;
 }
 
-a {
-  color: #00B7FF;
+nav {
+  background-color: #666;
+  padding: 10px;
+  text-align: left;
 }
+
+.nav-link {
+  display: inline-block;
+  margin-right: 10px;
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.container {
+  align-self: center;
+  max-width: 800px;
+  margin: 10px auto auto auto;
+  padding: 40px;
+}
+
+.heading {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+.diet-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.diet-table th,
+.diet-table td {
+  padding: 10px;
+  text-align: left;
+  border-bottom: 1px solid #ccc;
+}
+
+.diet-table th {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.diet-table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+.diet-table a {
+  text-decoration: none;
+  color: #333;
+}
+
+.diet-name {
+  color: #333;
+}
+
+.delete-form {
+  display: inline-block;
+}
+
+
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.Rate-button {
+  background-color: #4CAF50;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+
+
+
+/* Additional styling for a more appealing appearance */
+body {
+  background-color: #f1f1f1;
+}
+
+.container {
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+button[type="submit"] {
+  transition: background-color 0.3s ease;
+}
+
+/* Custom styling for the form inputs */
+.form-group input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  margin-top: 5px;
+}
+
+/* Spacing between form inputs */
+.form-group:not(:last-child) {
+  margin-bottom: 15px;
+}
+
+.delete-button {
+  background-color: #ff4d4d;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  padding: 5px 10px;
+  font-weight: bold;
+  border-radius: 4px;
+}
+
+a.Feedback-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: limegreen;
+  color: olivedrab;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+#but:hover {
+  background-color: lightgreen;
+}
+
+#but:active {
+  background-color: #a26161;
+}
+
+
+.report-chart {
+  background-color: #f2f2f2;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+
+
+.detail-label {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.detail-value {
+  margin-top: 0;
+}
+
+.rating-header {
+  margin-top: 20px;
+}
+

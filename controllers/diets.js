@@ -72,3 +72,30 @@ async function deleteDiet(req, res) {
           res.render('/diets', { errorMsg: err.message });
         }
       }
+
+      exports.submitRating = function(req, res) {
+        const rating = req.body.rating; // Get the rating value from the request body
+        const dietId = req.params.id; // Get the diet ID from the request parameters
+      
+        // Find the corresponding diet document in the database based on the diet ID
+        Diet.findById(dietId, function(err, diet) {
+          if (err) {
+            // Handle error if diet is not found
+            console.error(err);
+            res.redirect('/diets'); // Redirect to an appropriate page, e.g., the "All Diets" page
+          } else {
+            // Update the diet document with the new rating value
+            diet.rating = rating;
+      
+            // Save the updated diet document to the database
+            diet.save(function(err) {
+              if (err) {
+                // Handle error if the save operation fails
+                console.error(err);
+              }
+              // Redirect back to the "All Diets" show page
+              res.redirect('/diets/' + dietId);
+            });
+          }
+        });
+      };

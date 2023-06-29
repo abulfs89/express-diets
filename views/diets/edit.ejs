@@ -1,22 +1,36 @@
 <%- include('../partials/header') %>
+<nav>
+    <div class="nav-links">
+      <a href="/diets/new" class="nav-link">Add Diet</a>
+      <a href="/diets" class="nav-link">Diet List</a>
+    </div>
+  </nav>
 
-<h2>Edit Fruit</h2>
+  <div class="container">
+<h2>Rate Expresss Diet</h2>
 <form action="/diets/<%=diet.id%>?_method=PUT" method="POST">
-  <label>Name:
-    <input type="text" name="name" value="<%= diet.name %>">
+  
+  <br>
+  <div class="form-group">
+  <label>User Rating:</label>
+  <select name="Rating">
+    <option value="Not Rated" <%= diet.Rating === 'Not Rated' ? 'selected' : '' %>>Not Rated </option>
+    <option value="1 star" <%= diet.Rating === '1 star' ? 'selected' : '' %>>1 star </option>
+    <option value="2 stars" <%= diet.Rating === '2 stars' ? 'selected' : '' %>>2 stars</option>
+    <option value="3 stars" <%= diet.Rating === '3 stars' ? 'selected' : '' %>>3 stars</option>
+    <option value="4 stars" <%= diet.Rating === '4 stars' ? 'selected' : '' %>>4 stars</option>
+    <option value="5 stars" <%= diet.Rating === '5 stars' ? 'selected' : '' %>>5 stars</option>
+  </select>
+  </div> 
+  <div class="form-group">
+  <label>User Comment:
+    <input type="text" name="Comments" value="<%= diet.Comments%>" placeholder=" ">
   </label><br>
-  <label>Meal:
-    <select name="Meal">
-      <option value="Breakfast" <%= diet.meal === 'Breakfast' ? 'selected' : '' %>>Breakfast</option>
-      <option value="Lunch" <%= diet.meal === 'Lunch' ? 'selected' : '' %>>Lunch</option>
-      <option value="Dinner" <%= diet.meal === 'Dinner' ? 'selected' : '' %>>Dinner</option>
-      <option value="Dessert" <%= diet.meal === 'Dessert' ? 'selected' : '' %>>Dessert</option>
-    </select>
-  </label><br>
-  <label>Recipe:
-    <input type="text" name="Recipe" value="<%= diet.Recipe %>">
-  </label><br>
-  <input type="submit"/>
+  </div>
+  <div class="form-group">
+  <button type="submit" id="but" class="Rate-button" >Rate Diet</button>
+  </div>
 </form>
+  </div>
 
 <%- include('../partials/footer') %>

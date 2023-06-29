@@ -1,22 +1,42 @@
 <%- include('../partials/header') %>
 
-<h2>Enter a New Diet</h2>
-<form action="/diets" method="POST">
-  <label>Name:
-    <input type="text" name="name">
-  <label>Meal:
-    <select name="Meal">
-      <option value="Breakfast">Breakfast</option>
-      <option value="Lunch">Lunch</option>
-      <option value="Dinner">Dinner</option>
-      <option value="Dessert">Dessert</option>
-    </select>
-  </label><br>
-  <label>Recipe:
-    <input type="text" name="Recipe">
-  </label><br>
-  <button type="submit">Add Diet</button>
-</form>
+
+
+<title>Create New Diet</title>
+<nav>
+  <div class="nav-links">
+    <a href="/diets/new" class="nav-link">Add Diet</a>
+    <a href="/diets" class="nav-link">Diet List</a>
+  </div>
+</nav>
+
+<div class="container">
+  <h2>Create New Diet</h2>
+  <form action="/diets" method="POST">
+    <div class="form-group">
+      <label for="name">Diet Name:</label>
+      <input type="text" id="name" name="name" placeholder="Keto_Mary, Vegan_Joe etc">
+    </div>
+    <div class="form-group">
+      <label for="breakfast">Breakfast:</label>
+      <input type="text" id="breakfast" name="Breakfast" placeholder="Recipe/Link">
+    </div>
+    <div class="form-group">
+      <label for="lunch">Lunch:</label>
+      <input type="text" id="lunch" name="Lunch" placeholder="Recipe/Link">
+    </div>
+    <div class="form-group">
+      <label for="dinner">Dinner:</label>
+      <input type="text" id="dinner" name="Dinner" placeholder="Recipe/Link">
+    </div>
+    <div class="form-group">
+      <label for="dessert">Dessert:</label>
+      <input type="text" id="dessert" name="Dessert" placeholder="Recipe/Link">
+    </div>
+    
+    <button type="submit" id="but" class="Rate-button" >Create Diet</button>
+  </form>
+</div>
 <p><%= errorMsg %></p>
 
 <%- include('../partials/footer') %>
