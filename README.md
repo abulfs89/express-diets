@@ -15,6 +15,8 @@ Leave feedback and comments to improve and appreciate express-diets.
 
 ## Create new diets and/or try a new diet plan and leave feedback https://holy-forest-456.fly.dev/  
 
+![FAE616AF-1AB0-48F4-88BC-6125207575A4](https://github.com/abulfs89/express-diets/assets/132204123/081a7eb5-7527-4af4-ae44-44afe42b234c)
+
 
 ## Technologies used
 MongoDB, Express Js, Node Js, HTML, CSS and JavaScript
