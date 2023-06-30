@@ -9,7 +9,7 @@ Express-diets was created to assist our customers with dietary needs to maintain
 
 View the diet list and add diets to share with other customers.
 
-Leave feedback and comments to improve and appreciate express-diets.
+Expert Dietician feedback and comments to improve and appreciate express-diets.
 
 
 
@@ -23,6 +23,8 @@ MongoDB, Express Js, Node Js, HTML, CSS and JavaScript
 
 ## Stretch Goals
 Add user auth 
+
+Customer can leave feedback/ratings
 
 Add sorting functionality to sort diets by name/description and user feedback/ratings
 
