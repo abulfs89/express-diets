@@ -3,7 +3,7 @@
 
 Try a diet plan and share your own express-diet 
 
-## App Description
+## User Story
 
 Express-diets was created to assist our customers with dietary needs to maintain their healthy lifestyle.
 
